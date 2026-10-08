@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Find and follow the Association Of Islamic Students across social media.">
+  <title>Connect with us | Association Of Islamic Students</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #102b4b;
+      --muted: #64758a;
+      --paper: #f3f7fc;
+      --card: #ffffff;
+      --green: #0875c9;
+      --line: #dce7f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px;
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(190, 220, 247, .72), transparent 48%),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .page { width: min(100%, 490px); text-align: center; }
+    .mark {
+      width: 76px; height: 76px; margin: 0 auto 20px;
+      display: grid; place-items: center;
+      border: 1px solid rgba(8,117,201,.16); border-radius: 25px;
+      color: var(--green); background: rgba(255,255,255,.9);
+      box-shadow: 0 8px 24px rgba(30,52,38,.06);
+    }
+    .mark img { display: block; width: 100%; height: 100%; border-radius: inherit; object-fit: contain; }
+    .eyebrow { margin: 0 0 10px; color: var(--green); font-size: .75rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.25rem, 9vw, 3.25rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.04; }
+    .intro { max-width: 360px; margin: 15px auto 27px; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+    .links { display: grid; gap: 11px; }
+    .social-link {
+      min-height: 66px; padding: 12px 17px;
+      display: flex; align-items: center; gap: 14px;
+      border: 1px solid var(--line); border-radius: 17px;
+      color: var(--ink); background: var(--card); text-align: left; text-decoration: none;
+      box-shadow: 0 3px 10px rgba(31,43,35,.025);
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .social-link:hover { transform: translateY(-2px); border-color: #9fc9eb; box-shadow: 0 9px 20px rgba(16,54,91,.08); }
+    .social-link:focus-visible { outline: 3px solid #7bbcec; outline-offset: 3px; }
+    .icon { width: 39px; height: 39px; flex: 0 0 39px; display: grid; place-items: center; border-radius: 12px; color: var(--green); background: #eaf4fc; }
+    .icon svg { width: 21px; height: 21px; }
+    .label { flex: 1; font-weight: 680; }
+    .hint { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; font-weight: 450; }
+    .arrow { color: #849087; font-size: 1.25rem; }
+    footer { margin-top: 28px; color: var(--muted); font-size: .78rem; }
+    footer a { color: var(--green); text-decoration: none; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="mark">
+      <img src="association-logo.png" alt="Association of Islamic Students, University of Kelaniya logo">
+    </div>
+    <p class="eyebrow">Our community, wherever you are</p>
+    <h1>Association Of Islamic Students</h1>
+    <p class="intro">Follow along for our latest news, events, and updates. Choose your favorite place to connect with us.</p>
+
+    <nav class="links" aria-label="Follow our association">
+      <!-- Replace each href with your association's public profile URL. Keep the regular https:// URL:
+           phones can open the matching app when installed, and otherwise open the website. -->
+      <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open our Instagram profile">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.6" r=".8" fill="currentColor" stroke="none"/></svg></span>
+        <span class="label">Instagram<span class="hint">Photos, stories, and moments</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="social-link" href="https://aisuok.dub.link/tiktok" target="_blank" rel="noopener noreferrer" aria-label="Open our TikTok profile">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 7.2a6.1 6.1 0 0 1-3.8-1.3v8.3a5.7 5.7 0 1 1-5.7-5.7c.4 0 .8 0 1.2.1v3.2a2.5 2.5 0 1 0 1.5 2.3V2.5h3.1a6.1 6.1 0 0 0 3.7 3.7v3.2Z"/></svg></span>
+        <span class="label">TikTok<span class="hint">Short videos and updates</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="social-link" href="https://aisuok.dub.link/youtube" target="_blank" rel="noopener noreferrer" aria-label="Open our YouTube channel">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.1a3 3 0 0 0-2.1-2.2C19 4.4 12 4.4 12 4.4s-7 0-8.9.5A3 3 0 0 0 1 7.1a31 31 0 0 0-.5 4.9 31 31 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.2c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.2 31 31 0 0 0 .5-4.9 31 31 0 0 0-.5-4.9ZM9.7 15.5v-7l6 3.5-6 3.5Z"/></svg></span>
+        <span class="label">YouTube<span class="hint">Videos and event highlights</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="social-link" href="https://aisuok.dub.link/linkedin" target="_blank" rel="noopener noreferrer" aria-label="Open our LinkedIn page">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.2 8.4a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6ZM3.7 10h3v10h-3V10Zm5 0h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.6V20h-3v-5c0-1.2 0-2.8-1.8-2.8s-2.1 1.3-2.1 2.7V20h-3V10Z"/></svg></span>
+        <span class="label">LinkedIn<span class="hint">Our work and announcements</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="social-link" href="https://aisuok.dub.link/blog" target="_blank" rel="noopener noreferrer" aria-label="Visit our association website">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+        <span class="label">AIS Blog<span class="hint">Visit the association website</span></span><span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <footer>Made for our community · <a href="mailto:aisuok@gmail.com">Contact us</a></footer>
+  </main>
+</body>
+</html>
